@@ -28,7 +28,7 @@ use UnexpectedValueException;
 
 final class MsftGraphTransport extends AbstractTransport
 {
-  private ?GraphServiceClient $client;
+  private ?GraphServiceClient $client = null;
   private LoggerInterface $logger;
   private ?string $tenantId;
   private ?string $clientId;
@@ -42,6 +42,8 @@ final class MsftGraphTransport extends AbstractTransport
     $this->tenantId = $tenantId;
     $this->clientSecret = $clientSecret;
     $this->dispatcher = $dispatcher;
+
+    parent::__construct($dispatcher, $logger);
   }
 
   private function getClient(): GraphServiceClient
@@ -72,6 +74,7 @@ final class MsftGraphTransport extends AbstractTransport
 
     // now, we can use the client
     $requestBody = new SendMailPostRequestBody();
+    
     $gmessage = new Message();
     $gmessage->setSubject($headers->get('Subject'));
 
@@ -95,11 +98,11 @@ final class MsftGraphTransport extends AbstractTransport
    */
   protected function addParts(Message $message, AbstractPart $part): Message
   {
-    // if ($part instanceof AbstractMultipartPart) {
-    //   foreach ($part->getParts() as $newPart) {
-    //     $message = $this->addParts($message, $newPart);
-    //   }
-    // } else 
+    if ($part instanceof AbstractMultipartPart) {
+      foreach ($part->getParts() as $newPart) {
+        $message = $this->addParts($message, $newPart);
+      }
+    } else 
     if ($part instanceof DataPart) {
       $attachment = new FileAttachment();
       $attachment->setOdataType('#microsoft.graph.fileAttachment');

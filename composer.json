@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BernhardWebstudio\\Mailer\\Bridge\\MsftGraphMailer\\": ""
+            "BernhardWebstudio\\Mailer\\Bridge\\MsftGraphMailer": ""
         }
     },
     "authors": [
