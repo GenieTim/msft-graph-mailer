@@ -4,9 +4,11 @@ namespace BernhardWebstudio\Mailer\Bridge\MsftGraphMailer\Transport;
 
 use Psr\Log\LoggerInterface;
 use InvalidArgumentException;
+use UnexpectedValueException;
 use Symfony\Component\Mime\Address;
 use Microsoft\Graph\GraphServiceClient;
 use Symfony\Component\Mailer\SentMessage;
+use Symfony\Component\Mime\Part\DataPart;
 use Symfony\Component\Mime\Part\TextPart;
 use Symfony\Component\Mime\Header\Headers;
 use Microsoft\Graph\Generated\Models\Message;
@@ -14,6 +16,7 @@ use Symfony\Component\Mime\Part\AbstractPart;
 use Microsoft\Graph\Generated\Models\BodyType;
 use Microsoft\Graph\Generated\Models\ItemBody;
 use Microsoft\Graph\Generated\Models\Recipient;
+use Microsoft\Graph\Generated\Models\Attachment;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Microsoft\Graph\Generated\Models\EmailAddress;
 use Microsoft\Graph\Generated\Models\FileAttachment;
@@ -23,8 +26,6 @@ use Symfony\Component\Mime\Part\AbstractMultipartPart;
 use Symfony\Component\Mailer\Transport\AbstractTransport;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 use Microsoft\Graph\Generated\Users\Item\SendMail\SendMailPostRequestBody;
-use Symfony\Component\Mime\Part\DataPart;
-use UnexpectedValueException;
 
 final class MsftGraphTransport extends AbstractTransport
 {
@@ -66,7 +67,10 @@ final class MsftGraphTransport extends AbstractTransport
   {
     $symfonyMessage = $message->getOriginalMessage();
     if (!$symfonyMessage instanceof SymfonyMessage) {
-      throw new InvalidArgumentException("Cannot send messages that are not easily parsable anymore.");
+      throw new InvalidArgumentException(
+        "Cannot send messages that are not easily parsable anymore, got " .
+          get_class($message) . " instead of " . SymfonyMessage::class . "."
+      );
     }
     $headers = $symfonyMessage->getHeaders();
     // handle login if needed
@@ -74,12 +78,13 @@ final class MsftGraphTransport extends AbstractTransport
 
     // now, we can use the client
     $requestBody = new SendMailPostRequestBody();
-    
+
     $gmessage = new Message();
     $gmessage->setSubject($headers->get('Subject'));
 
     $gmessage = $this->processRecipients($gmessage, $headers);
     $gmessage = $this->addParts($gmessage, $symfonyMessage->getBody());
+    $gmessage->setHasAttachments(count($gmessage->getAttachments()) > 0);
 
     $requestBody->setMessage($gmessage);
     $requestBody->setSaveToSentItems(false);
@@ -98,18 +103,13 @@ final class MsftGraphTransport extends AbstractTransport
    */
   protected function addParts(Message $message, AbstractPart $part): Message
   {
-    if ($part instanceof AbstractMultipartPart) {
-      foreach ($part->getParts() as $newPart) {
-        $message = $this->addParts($message, $newPart);
-      }
-    } else 
     if ($part instanceof DataPart) {
       $attachment = new FileAttachment();
       $attachment->setOdataType('#microsoft.graph.fileAttachment');
       $attachment->setName($part->getFilename());
       $attachment->setContentType($part->getContentType());
       $attachment->setContentBytes(
-        \GuzzleHttp\Psr7\Utils::streamFor($part->bodyToString())
+        \GuzzleHttp\Psr7\Utils::streamFor(base64_encode($part->bodyToString()))
       );
       $attachments = $message->getAttachments() ?? [];
       $attachments[] = $attachment;
@@ -119,8 +119,22 @@ final class MsftGraphTransport extends AbstractTransport
       $body->setContentType(new BodyType($part->getMediaSubtype()));
       $body->setContent($part->bodyToString());
       $message->setBody($body);
+    } else if ($part instanceof AbstractMultipartPart) {
+      $attachment = new FileAttachment();
+      $attachment->setOdataType('#microsoft.graph.fileAttachment');
+      $attachment->setIsInline(true);
+      $attachment->setContentType('multipart/' . $part->getMediaSubtype());
+      $attachment->setContentBytes(
+        \GuzzleHttp\Psr7\Utils::streamFor(base64_encode($part->bodyToString()))
+      );
+      $attachments = $message->getAttachments() ?? [];
+      $attachments[] = $attachment;
+      $message->setAttachments($attachments);
     } else {
-      throw new InvalidArgumentException("MSFTGraohTransport does not support message part of class " . get_class($part));
+      throw new InvalidArgumentException(
+        "MSFTGraphTransport does not support message part of class "
+          . get_class($part) . ". Part is: " . $part->asDebugString()
+      );
     }
 
     return $message;
