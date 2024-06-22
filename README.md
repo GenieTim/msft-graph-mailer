@@ -12,7 +12,7 @@ composer require bernhardwebstudio/msft-graph-mailer
 
 ## Configuration
 
-You need to tell Symofony that this is a mail transport:
+You need to tell Symfony that this is a mail transport:
 
 ```yaml
 # services.yaml
@@ -33,7 +33,7 @@ MAILER_DSN=msft+graph://{client-id}:{client-secret}@outlook.com?tenant={tenant-i
 
 where you replace all the values in `{}` with your own values from your active directory.
 
-## Useage
+## Usage
 
 If you set the configuration correctly, that's all.
 
