@@ -34,7 +34,7 @@ final class MsftGraphTransport extends AbstractTransport
   private ?string $tenantId;
   private ?string $clientId;
   private ?string $clientSecret;
-  private EventDispatcher $dispatcher;
+  private EventDispatcherInterface $dispatcher;
 
   public function __construct(?string $tenantId, string $clientId, string $clientSecret, EventDispatcherInterface $dispatcher, LoggerInterface $logger)
   {

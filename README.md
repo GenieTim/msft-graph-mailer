@@ -17,7 +17,7 @@ You need to tell Symfony that this is a mail transport:
 ```yaml
 # services.yaml
 services:
-  mailer.transport_factory.custom:
+  mailer.transport_factory.msftgraph:
     class: BernhardWebstudio\Mailer\Bridge\MsftGraphMailer\Transport\MsftGraphTransportFactory
     parent: mailer.transport_factory.abstract
     tags:
@@ -37,4 +37,8 @@ where you replace all the values in `{}` with your own values from your active d
 
 If you set the configuration correctly, that's all.
 
-Please note that this transport does not support all types of E-Mail messages (e.g. MultiPart messages are not supported yet).
+Please note that this transport does not support all types of E-Mail messages in its best form.
+Please contribute if you understand enough about MIME and Microsoft Graph to fix this.
+
+Additionally, Microsoft imposes restrictions on the sender E-Mail you can use.
+Simply be aware of that, please.
