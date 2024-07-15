@@ -80,11 +80,11 @@ final class MsftGraphTransport extends AbstractTransport
     $requestBody = new SendMailPostRequestBody();
 
     $gmessage = new Message();
-    $gmessage->setSubject($headers->get('Subject'));
+    $gmessage->setSubject($headers->get('Subject')->toString());
 
     $gmessage = $this->processRecipients($gmessage, $headers);
     $gmessage = $this->addParts($gmessage, $symfonyMessage->getBody());
-    $gmessage->setHasAttachments(count($gmessage->getAttachments()) > 0);
+    $gmessage->setHasAttachments($gmessage->getAttachments() !== null && count($gmessage->getAttachments()) > 0);
 
     $requestBody->setMessage($gmessage);
     $requestBody->setSaveToSentItems(false);
@@ -116,7 +116,7 @@ final class MsftGraphTransport extends AbstractTransport
       $message->setAttachments($attachments);
     } else if ($part instanceof TextPart) {
       $body = new ItemBody();
-      $body->setContentType(new BodyType($part->getMediaSubtype()));
+      $body->setContentType(new BodyType($part->getMediaSubtype() == 'plain' ? 'text' : 'html'));
       $body->setContent($part->bodyToString());
       $message->setBody($body);
     } else if ($part instanceof AbstractMultipartPart) {
