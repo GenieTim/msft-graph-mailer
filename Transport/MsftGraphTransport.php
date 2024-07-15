@@ -29,6 +29,7 @@ use Microsoft\Graph\Generated\Users\Item\SendMail\SendMailPostRequestBody;
 
 final class MsftGraphTransport extends AbstractTransport
 {
+  private bool $saveToSent = true;
   private ?GraphServiceClient $client = null;
   private LoggerInterface $logger;
   private ?string $tenantId;
@@ -36,11 +37,12 @@ final class MsftGraphTransport extends AbstractTransport
   private ?string $clientSecret;
   private EventDispatcherInterface $dispatcher;
 
-  public function __construct(?string $tenantId, string $clientId, string $clientSecret, EventDispatcherInterface $dispatcher, LoggerInterface $logger)
+  public function __construct(?string $tenantId, string $clientId, string $clientSecret, bool $saveToSent, EventDispatcherInterface $dispatcher, LoggerInterface $logger)
   {
     $this->logger = $logger;
     $this->clientId = $clientId;
     $this->tenantId = $tenantId;
+    $this->saveToSent = $saveToSent;
     $this->clientSecret = $clientSecret;
     $this->dispatcher = $dispatcher;
 
@@ -87,7 +89,7 @@ final class MsftGraphTransport extends AbstractTransport
     $gmessage->setHasAttachments($gmessage->getAttachments() !== null && count($gmessage->getAttachments()) > 0);
 
     $requestBody->setMessage($gmessage);
-    $requestBody->setSaveToSentItems(false);
+    $requestBody->setSaveToSentItems($this->saveToSent);
 
     $this->client->users()->byUserId($message->getEnvelope()->getSender()->getAddress())->sendMail()->post($requestBody)->wait();
   }

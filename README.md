@@ -28,10 +28,12 @@ Finally, you need to configure the mailer bundle to use this transport,
 e.g. using an ENV variable like
 
 ```bash
-MAILER_DSN=msft+graph://{client-id}:{client-secret}@outlook.com?tenant={tenant-id}
+MAILER_DSN=msft+graph://{client-id}:{client-secret}@outlook.com?saveToSent=1&tenant={tenant-id}
 ```
 
 where you replace all the values in `{}` with your own values from your active directory.
+
+The `tenant` and `saveToSent` options are optional.
 
 ## Usage
 
@@ -41,4 +43,4 @@ Please note that this transport does not support all types of E-Mail messages in
 Please contribute if you understand enough about MIME and Microsoft Graph to fix this.
 
 Additionally, Microsoft imposes restrictions on the sender E-Mail you can use.
-Simply be aware of that, please.
+Simply be aware of that when setting the `From` of the E-Mail, please, if you want to prevent errors.

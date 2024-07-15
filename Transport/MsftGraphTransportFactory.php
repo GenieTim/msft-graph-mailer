@@ -16,7 +16,7 @@ final class MsftGraphTransportFactory extends AbstractTransportFactory
   public function create(Dsn $dsn): TransportInterface
   {
     if (\in_array($dsn->getScheme(), $this->getSupportedSchemes())) {
-      return new MsftGraphTransport($dsn->getOption('tenant'),  $this->getUser($dsn), $this->getPassword($dsn), $this->dispatcher, $this->logger);
+      return new MsftGraphTransport($dsn->getOption('tenant'),  $this->getUser($dsn), $this->getPassword($dsn), boolval($dsn->getOption('saveToSent', true)), $this->dispatcher, $this->logger);
     }
 
     throw new UnsupportedSchemeException($dsn, 'msft', $this->getSupportedSchemes());
