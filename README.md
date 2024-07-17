@@ -37,7 +37,8 @@ The `tenant` and `saveToSent` options are optional.
 
 ## Usage
 
-If you set the configuration correctly, that's all.
+If you set the configuration correctly, that's all, you can simply use the Symfony mailer
+and you will be sending the E-Mails using the Microsoft Graph API.
 
 Please note that this transport does not support all types of E-Mail messages in its best form.
 Please contribute if you understand enough about MIME and Microsoft Graph to fix this.

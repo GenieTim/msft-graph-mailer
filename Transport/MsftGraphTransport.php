@@ -20,6 +20,7 @@ use Microsoft\Graph\Generated\Models\Attachment;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Microsoft\Graph\Generated\Models\EmailAddress;
 use Microsoft\Graph\Generated\Models\FileAttachment;
+use Microsoft\Graph\Generated\Models\ODataErrors\ODataError;
 use Symfony\Component\Mime\Message as SymfonyMessage;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Mime\Part\AbstractMultipartPart;
@@ -91,7 +92,14 @@ final class MsftGraphTransport extends AbstractTransport
     $requestBody->setMessage($gmessage);
     $requestBody->setSaveToSentItems($this->saveToSent);
 
-    $this->client->users()->byUserId($message->getEnvelope()->getSender()->getAddress())->sendMail()->post($requestBody)->wait();
+    try {
+      $this->client->users()->byUserId($message->getEnvelope()->getSender()->getAddress())->sendMail()->post($requestBody)->wait();
+    } catch (ODataError $e) {
+      $this->logger->error("Failed to send E-Mail using Microsoft Graph API: " . $e->getMessage() . "; " . $e->getError()->getMessage(), [
+        $e, $e->getError(),
+      ]);
+      throw $e;
+    }
   }
 
   /**
