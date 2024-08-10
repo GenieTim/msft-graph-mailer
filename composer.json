@@ -8,6 +8,7 @@
         "microsoft/microsoft-graph": "^2.2"
     },
     "require-dev": {
+        "symplify/easy-coding-standard": "^12.0.6",
         "symfony/http-client": "^6.4|^7.0"
     },
     "license": "MIT",
@@ -15,6 +16,10 @@
         "psr-4": {
             "BernhardWebstudio\\Mailer\\Bridge\\MsftGraphMailer\\": ""
         }
+    },
+    "scripts": {
+        "check-cs": "./vendor/bin/ecs check",
+        "fix-cs": "./vendor/bin/ecs check --fix"
     },
     "authors": [
         {

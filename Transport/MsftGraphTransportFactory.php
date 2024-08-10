@@ -13,17 +13,17 @@ use Symfony\Component\Mailer\Transport\TransportInterface;
  */
 final class MsftGraphTransportFactory extends AbstractTransportFactory
 {
-  public function create(Dsn $dsn): TransportInterface
-  {
-    if (\in_array($dsn->getScheme(), $this->getSupportedSchemes())) {
-      return new MsftGraphTransport($dsn->getOption('tenant'),  $this->getUser($dsn), $this->getPassword($dsn), boolval($dsn->getOption('saveToSent', true)), $this->dispatcher, $this->logger);
-    }
+	public function create(Dsn $dsn): TransportInterface
+	{
+		if (\in_array($dsn->getScheme(), $this->getSupportedSchemes())) {
+			return new MsftGraphTransport($dsn->getOption('tenant'), $this->getUser($dsn), $this->getPassword($dsn), boolval($dsn->getOption('saveToSent', true)), $this->dispatcher, $this->logger);
+		}
 
-    throw new UnsupportedSchemeException($dsn, 'msft', $this->getSupportedSchemes());
-  }
+		throw new UnsupportedSchemeException($dsn, 'msft', $this->getSupportedSchemes());
+	}
 
-  protected function getSupportedSchemes(): array
-  {
-    return ['msft+graph'];
-  }
+	protected function getSupportedSchemes(): array
+	{
+		return ['msft+graph'];
+	}
 }
