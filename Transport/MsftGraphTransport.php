@@ -151,7 +151,7 @@ final class MsftGraphTransport extends AbstractTransport
 		// 	\GuzzleHttp\Psr7\Utils::streamFor($attachment->bodyToString())
 		// );
 		$msftAttachment->setContentBytes(
-			\GuzzleHttp\Psr7\Utils::streamFor($attachment->getBody())
+			\GuzzleHttp\Psr7\Utils::streamFor(base64_encode($attachment->getBody()))
 		);
 		return $msftAttachment;
 	}
