@@ -16,6 +16,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Mailer\Exception\TransportException;
 use Symfony\Component\Mailer\SentMessage;
 use Symfony\Component\Mailer\Transport\AbstractTransport;
 use Symfony\Component\Mime\Address;
@@ -66,7 +67,7 @@ final class MsftGraphTransport extends AbstractTransport
 		if (!$symfonyMessage instanceof SymfonyMessage) {
 			throw new InvalidArgumentException(
 				'Cannot send messages that are not easily parsable anymore, got ' .
-		  get_class($message) . ' instead of ' . SymfonyMessage::class . '.'
+					get_class($message) . ' instead of ' . SymfonyMessage::class . '.'
 			);
 		}
 		$headers = $symfonyMessage->getHeaders();
@@ -92,9 +93,10 @@ final class MsftGraphTransport extends AbstractTransport
 			$this->client->users()->byUserId($message->getEnvelope()->getSender()->getAddress())->sendMail()->post($requestBody)->wait();
 		} catch (ODataError $e) {
 			$this->logger->error('Failed to send E-Mail using Microsoft Graph API: ' . $e->getMessage() . '; ' . $e->getError()->getMessage(), [
-				$e, $e->getError(),
+				$e,
+				$e->getError(),
 			]);
-			throw $e;
+			throw new TransportException("MSFT Graph API error: " . $e->getError()->getMessage(), $e->getCode(), $e);
 		}
 	}
 
