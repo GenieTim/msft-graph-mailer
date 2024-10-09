@@ -134,7 +134,7 @@ final class MsftGraphTransport extends AbstractTransport
 	}
 
 	/**
-	 * Convert a Symonfy data part to a Microsoft Graph attachment
+	 * Convert a Symfony data part to a Microsoft Graph attachment
 	 *
 	 * @param DataPart $attachment the symfony attachment
 	 * @return Attachment the Microsoft Graph attachment
@@ -148,7 +148,7 @@ final class MsftGraphTransport extends AbstractTransport
 		$msftAttachment->setName($attachment->getFilename());
 		$msftAttachment->setContentType($attachment->getContentType());
 		$msftAttachment->setContentBytes(
-			\GuzzleHttp\Psr7\Utils::streamFor(base64_encode($attachment->bodyToString()))
+			\GuzzleHttp\Psr7\Utils::streamFor($attachment->bodyToString())
 		);
 		return $msftAttachment;
 	}
