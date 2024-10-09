@@ -147,8 +147,11 @@ final class MsftGraphTransport extends AbstractTransport
 		$msftAttachment->setOdataType('#microsoft.graph.fileAttachment');
 		$msftAttachment->setName($attachment->getFilename());
 		$msftAttachment->setContentType($attachment->getContentType());
+		// $msftAttachment->setContentBytes(
+		// 	\GuzzleHttp\Psr7\Utils::streamFor($attachment->bodyToString())
+		// );
 		$msftAttachment->setContentBytes(
-			\GuzzleHttp\Psr7\Utils::streamFor($attachment->bodyToString())
+			\GuzzleHttp\Psr7\Utils::streamFor($attachment->getBody())
 		);
 		return $msftAttachment;
 	}
