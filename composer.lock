@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2"
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
-                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
+                "url": "https://api.github.com/repos/brick/math/zipball/f05858549e5f9d7bb45875a75583240a38a281d0",
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.0"
+                "source": "https://github.com/brick/math/tree/0.14.1"
             },
             "funding": [
                 {
@@ -64,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-29T12:40:03+00:00"
+            "time": "2025-11-24T14:40:29+00:00"
         },
         {
             "name": "composer/semver",
@@ -366,16 +366,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.11.1",
+            "version": "v7.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "d1e91ecf8c598d073d0995afa8cd5c75c6e19e66"
+                "reference": "5645b43af647b6947daac1d0f659dd1fbe8d3b65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d1e91ecf8c598d073d0995afa8cd5c75c6e19e66",
-                "reference": "d1e91ecf8c598d073d0995afa8cd5c75c6e19e66",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5645b43af647b6947daac1d0f659dd1fbe8d3b65",
+                "reference": "5645b43af647b6947daac1d0f659dd1fbe8d3b65",
                 "shasum": ""
             },
             "require": {
@@ -423,9 +423,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.11.1"
+                "source": "https://github.com/firebase/php-jwt/tree/v7.0.2"
             },
-            "time": "2025-04-09T20:32:01+00:00"
+            "time": "2025-12-16T22:17:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -754,22 +754,22 @@
         },
         {
             "name": "league/oauth2-client",
-            "version": "2.8.1",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-client.git",
-                "reference": "9df2924ca644736c835fc60466a3a60390d334f9"
+                "reference": "26e8c5da4f3d78cede7021e09b1330a0fc093d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/9df2924ca644736c835fc60466a3a60390d334f9",
-                "reference": "9df2924ca644736c835fc60466a3a60390d334f9",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/26e8c5da4f3d78cede7021e09b1330a0fc093d5e",
+                "reference": "26e8c5da4f3d78cede7021e09b1330a0fc093d5e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
-                "php": "^7.1 || >=8.0.0 <8.5.0"
+                "php": "^7.1 || >=8.0.0 <8.6.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3.5",
@@ -813,22 +813,22 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth2-client/issues",
-                "source": "https://github.com/thephpleague/oauth2-client/tree/2.8.1"
+                "source": "https://github.com/thephpleague/oauth2-client/tree/2.9.0"
             },
-            "time": "2025-02-26T04:37:30+00:00"
+            "time": "2025-11-25T22:17:17+00:00"
         },
         {
             "name": "microsoft/kiota-abstractions",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-abstractions-php.git",
-                "reference": "20c37dece3902cea4116fca931e908e5554ba408"
+                "reference": "dd22152c9497b5dedcefcf9025691c6db40c23b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-abstractions-php/zipball/20c37dece3902cea4116fca931e908e5554ba408",
-                "reference": "20c37dece3902cea4116fca931e908e5554ba408",
+                "url": "https://api.github.com/repos/microsoft/kiota-abstractions-php/zipball/dd22152c9497b5dedcefcf9025691c6db40c23b3",
+                "reference": "dd22152c9497b5dedcefcf9025691c6db40c23b3",
                 "shasum": ""
             },
             "require": {
@@ -863,30 +863,30 @@
             ],
             "description": "Abstractions for Kiota",
             "support": {
-                "source": "https://github.com/microsoft/kiota-abstractions-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-abstractions-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:34:18+00:00"
+            "time": "2025-12-18T13:14:21+00:00"
         },
         {
             "name": "microsoft/kiota-authentication-phpleague",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-authentication-phpleague-php.git",
-                "reference": "4e15a34c45aa04613ea31461458894ee643e57f5"
+                "reference": "7766da482a86ccae8629a947cb0d21d160b6d18b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-authentication-phpleague-php/zipball/4e15a34c45aa04613ea31461458894ee643e57f5",
-                "reference": "4e15a34c45aa04613ea31461458894ee643e57f5",
+                "url": "https://api.github.com/repos/microsoft/kiota-authentication-phpleague-php/zipball/7766da482a86ccae8629a947cb0d21d160b6d18b",
+                "reference": "7766da482a86ccae8629a947cb0d21d160b6d18b",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "firebase/php-jwt": "^v6.0.0",
+                "firebase/php-jwt": "^6 || ^7",
                 "league/oauth2-client": "^2.6.1",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0",
                 "ramsey/uuid": "^4.2.3"
             },
@@ -912,29 +912,29 @@
             ],
             "description": "Authentication provider for Kiota using the PHP League OAuth 2.0 client to authenticate against the Microsoft Identity platform",
             "support": {
-                "source": "https://github.com/microsoft/kiota-authentication-phpleague-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-authentication-phpleague-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:47:56+00:00"
+            "time": "2025-12-18T13:55:33+00:00"
         },
         {
             "name": "microsoft/kiota-http-guzzle",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-http-guzzle-php.git",
-                "reference": "adb261be0bf44d69fac670db262e0d2006a55c01"
+                "reference": "52102c4cf6a14bee14b45d43d205c58f9483468e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-http-guzzle-php/zipball/adb261be0bf44d69fac670db262e0d2006a55c01",
-                "reference": "adb261be0bf44d69fac670db262e0d2006a55c01",
+                "url": "https://api.github.com/repos/microsoft/kiota-http-guzzle-php/zipball/52102c4cf6a14bee14b45d43d205c58f9483468e",
+                "reference": "52102c4cf6a14bee14b45d43d205c58f9483468e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-zlib": "*",
                 "guzzlehttp/guzzle": "^7.4.5",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -959,28 +959,28 @@
             ],
             "description": "Kiota HTTP Request Adapter implementation",
             "support": {
-                "source": "https://github.com/microsoft/kiota-http-guzzle-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-http-guzzle-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:48:12+00:00"
+            "time": "2025-12-18T13:49:49+00:00"
         },
         {
             "name": "microsoft/kiota-serialization-form",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-serialization-form-php.git",
-                "reference": "2820f4070a8eef3df89c46ec9e657b1427800c99"
+                "reference": "df46de5a4aebfb58f745598a39f0802449a7b727"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-serialization-form-php/zipball/2820f4070a8eef3df89c46ec9e657b1427800c99",
-                "reference": "2820f4070a8eef3df89c46ec9e657b1427800c99",
+                "url": "https://api.github.com/repos/microsoft/kiota-serialization-form-php/zipball/df46de5a4aebfb58f745598a39f0802449a7b727",
+                "reference": "df46de5a4aebfb58f745598a39f0802449a7b727",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/psr7": "^1.6 || ^2",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -1007,28 +1007,28 @@
             ],
             "description": "Form implementation of Kiota abstractions serialization.",
             "support": {
-                "source": "https://github.com/microsoft/kiota-serialization-form-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-serialization-form-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:47:34+00:00"
+            "time": "2025-12-18T13:54:15+00:00"
         },
         {
             "name": "microsoft/kiota-serialization-json",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-serialization-json-php.git",
-                "reference": "8537f9e53d5c5aed303e87a35e4d2a253468aac6"
+                "reference": "7682906e67c36eb891282033195ef87921835ed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-serialization-json-php/zipball/8537f9e53d5c5aed303e87a35e4d2a253468aac6",
-                "reference": "8537f9e53d5c5aed303e87a35e4d2a253468aac6",
+                "url": "https://api.github.com/repos/microsoft/kiota-serialization-json-php/zipball/7682906e67c36eb891282033195ef87921835ed0",
+                "reference": "7682906e67c36eb891282033195ef87921835ed0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/psr7": "^1.6 || ^2",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -1055,28 +1055,28 @@
             ],
             "description": "Implementation of Kiota serialization abstractions using Json.",
             "support": {
-                "source": "https://github.com/microsoft/kiota-serialization-json-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-serialization-json-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:47:11+00:00"
+            "time": "2025-12-18T13:45:08+00:00"
         },
         {
             "name": "microsoft/kiota-serialization-multipart",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-serialization-multipart-php.git",
-                "reference": "28ad890e9b1602ea1681e8d933edd3c78287e729"
+                "reference": "768ce6464982fc847bd5414580cf92eebd3eab66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-serialization-multipart-php/zipball/28ad890e9b1602ea1681e8d933edd3c78287e729",
-                "reference": "28ad890e9b1602ea1681e8d933edd3c78287e729",
+                "url": "https://api.github.com/repos/microsoft/kiota-serialization-multipart-php/zipball/768ce6464982fc847bd5414580cf92eebd3eab66",
+                "reference": "768ce6464982fc847bd5414580cf92eebd3eab66",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/psr7": "^1.6 || ^2",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -1103,27 +1103,27 @@
             ],
             "description": "Multipart implementation of Kiota abstractions serialization.",
             "support": {
-                "source": "https://github.com/microsoft/kiota-serialization-multipart-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-serialization-multipart-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:47:45+00:00"
+            "time": "2025-12-18T13:47:07+00:00"
         },
         {
             "name": "microsoft/kiota-serialization-text",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoft/kiota-serialization-text-php.git",
-                "reference": "257afebadf347f47284fdaa28849f7187bafb6e6"
+                "reference": "3289d60f971c96324830c0a99ae5ae335e7d4d63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoft/kiota-serialization-text-php/zipball/257afebadf347f47284fdaa28849f7187bafb6e6",
-                "reference": "257afebadf347f47284fdaa28849f7187bafb6e6",
+                "url": "https://api.github.com/repos/microsoft/kiota-serialization-text-php/zipball/3289d60f971c96324830c0a99ae5ae335e7d4d63",
+                "reference": "3289d60f971c96324830c0a99ae5ae335e7d4d63",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "^1.6 || ^2",
-                "microsoft/kiota-abstractions": "^1.5.1",
+                "microsoft/kiota-abstractions": "^1.5.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -1148,22 +1148,22 @@
             ],
             "description": "Implementation of Serialization Abstractions for text/plain content",
             "support": {
-                "source": "https://github.com/microsoft/kiota-serialization-text-php/tree/1.5.1"
+                "source": "https://github.com/microsoft/kiota-serialization-text-php/tree/1.5.2"
             },
-            "time": "2025-10-08T16:46:20+00:00"
+            "time": "2025-12-18T13:56:02+00:00"
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "v2.49.0",
+            "version": "v2.54.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "eba42c6802b562823fb4670afcdde51a668876cf"
+                "reference": "8fbfdd6265f52b09c13b434c81bf3b6067d0d02d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/eba42c6802b562823fb4670afcdde51a668876cf",
-                "reference": "eba42c6802b562823fb4670afcdde51a668876cf",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/8fbfdd6265f52b09c13b434c81bf3b6067d0d02d",
+                "reference": "8fbfdd6265f52b09c13b434c81bf3b6067d0d02d",
                 "shasum": ""
             },
             "require": {
@@ -1195,9 +1195,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.49.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/v2.54.0"
             },
-            "time": "2025-10-06T21:41:48+00:00"
+            "time": "2026-01-07T17:30:54+00:00"
         },
         {
             "name": "microsoft/microsoft-graph-core",
@@ -1321,16 +1321,16 @@
         },
         {
             "name": "open-telemetry/api",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/api.git",
-                "reference": "610b79ad9d6d97e8368bcb6c4d42394fbb87b522"
+                "reference": "45bda7efa8fcdd9bdb0daa2f26c8e31f062f49d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/610b79ad9d6d97e8368bcb6c4d42394fbb87b522",
-                "reference": "610b79ad9d6d97e8368bcb6c4d42394fbb87b522",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/45bda7efa8fcdd9bdb0daa2f26c8e31f062f49d4",
+                "reference": "45bda7efa8fcdd9bdb0daa2f26c8e31f062f49d4",
                 "shasum": ""
             },
             "require": {
@@ -1350,7 +1350,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-main": "1.7.x-dev"
+                    "dev-main": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -1383,11 +1383,11 @@
             ],
             "support": {
                 "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
-                "docs": "https://opentelemetry.io/docs/php",
+                "docs": "https://opentelemetry.io/docs/languages/php",
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-10-02T23:44:28+00:00"
+            "time": "2025-10-19T10:49:48+00:00"
         },
         {
             "name": "open-telemetry/context",
@@ -1450,16 +1450,16 @@
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.9.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e"
+                "reference": "d91f21addcdb42da9a451c002777f8318432461a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e",
-                "reference": "8986bcbcbea79cb1ba9e91c1d621541ad63d6b3e",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/d91f21addcdb42da9a451c002777f8318432461a",
+                "reference": "d91f21addcdb42da9a451c002777f8318432461a",
                 "shasum": ""
             },
             "require": {
@@ -1539,11 +1539,11 @@
             ],
             "support": {
                 "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
-                "docs": "https://opentelemetry.io/docs/php",
+                "docs": "https://opentelemetry.io/docs/languages/php",
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-10-02T23:44:28+00:00"
+            "time": "2026-01-15T11:21:03+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
@@ -1683,16 +1683,16 @@
         },
         {
             "name": "php-http/promise",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/promise.git",
-                "reference": "44a67cb59f708f826f3bec35f22030b3edb90119"
+                "reference": "b81bdf5a8e82a065fd73eb82919f28e0ac4d2a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/promise/zipball/44a67cb59f708f826f3bec35f22030b3edb90119",
-                "reference": "44a67cb59f708f826f3bec35f22030b3edb90119",
+                "url": "https://api.github.com/repos/php-http/promise/zipball/b81bdf5a8e82a065fd73eb82919f28e0ac4d2a1b",
+                "reference": "b81bdf5a8e82a065fd73eb82919f28e0ac4d2a1b",
                 "shasum": ""
             },
             "require": {
@@ -1729,9 +1729,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/promise/issues",
-                "source": "https://github.com/php-http/promise/tree/1.2.1"
+                "source": "https://github.com/php-http/promise/tree/1.2.2"
             },
-            "time": "2023-11-08T12:57:08+00:00"
+            "time": "2025-11-08T15:23:07+00:00"
         },
         {
             "name": "psr/cache",
@@ -2217,20 +2217,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.9.1",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440"
+                "reference": "8429c78ca35a09f27565311b98101e2826affde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/81f941f6f729b1e3ceea61d9d014f8b6c6800440",
-                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/8429c78ca35a09f27565311b98101e2826affde0",
+                "reference": "8429c78ca35a09f27565311b98101e2826affde0",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14",
+                "brick/math": "^0.8.16 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
             },
@@ -2289,9 +2289,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.9.1"
+                "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
-            "time": "2025-09-04T20:59:21+00:00"
+            "time": "2025-12-14T04:43:48+00:00"
         },
         {
             "name": "stduritemplate/stduritemplate",
@@ -2401,24 +2401,24 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v7.3.3",
+            "version": "v8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "b7dc69e71de420ac04bc9ab830cf3ffebba48191"
+                "reference": "573f95783a2ec6e38752979db139f09fec033f03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b7dc69e71de420ac04bc9ab830cf3ffebba48191",
-                "reference": "b7dc69e71de420ac04bc9ab830cf3ffebba48191",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/573f95783a2ec6e38752979db139f09fec033f03",
+                "reference": "573f95783a2ec6e38752979db139f09fec033f03",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
+                "php": ">=8.4",
                 "symfony/event-dispatcher-contracts": "^2.5|^3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<6.4",
+                "symfony/security-http": "<7.4",
                 "symfony/service-contracts": "<2.5"
             },
             "provide": {
@@ -2427,13 +2427,14 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^6.4|^7.0",
-                "symfony/dependency-injection": "^6.4|^7.0",
-                "symfony/error-handler": "^6.4|^7.0",
-                "symfony/expression-language": "^6.4|^7.0",
-                "symfony/http-foundation": "^6.4|^7.0",
+                "symfony/config": "^7.4|^8.0",
+                "symfony/dependency-injection": "^7.4|^8.0",
+                "symfony/error-handler": "^7.4|^8.0",
+                "symfony/expression-language": "^7.4|^8.0",
+                "symfony/framework-bundle": "^7.4|^8.0",
+                "symfony/http-foundation": "^7.4|^8.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/stopwatch": "^6.4|^7.0"
+                "symfony/stopwatch": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -2461,7 +2462,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v7.3.3"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v8.0.0"
             },
             "funding": [
                 {
@@ -2481,7 +2482,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-13T11:49:31+00:00"
+            "time": "2025-10-30T14:17:19+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -2561,16 +2562,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v7.3.4",
+            "version": "v7.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "ab97ef2f7acf0216955f5845484235113047a31d"
+                "reference": "e472d35e230108231ccb7f51eb6b2100cac02ee4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/ab97ef2f7acf0216955f5845484235113047a31d",
-                "reference": "ab97ef2f7acf0216955f5845484235113047a31d",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/e472d35e230108231ccb7f51eb6b2100cac02ee4",
+                "reference": "e472d35e230108231ccb7f51eb6b2100cac02ee4",
                 "shasum": ""
             },
             "require": {
@@ -2578,8 +2579,8 @@
                 "php": ">=8.2",
                 "psr/event-dispatcher": "^1",
                 "psr/log": "^1|^2|^3",
-                "symfony/event-dispatcher": "^6.4|^7.0",
-                "symfony/mime": "^7.2",
+                "symfony/event-dispatcher": "^6.4|^7.0|^8.0",
+                "symfony/mime": "^7.2|^8.0",
                 "symfony/service-contracts": "^2.5|^3"
             },
             "conflict": {
@@ -2590,10 +2591,10 @@
                 "symfony/twig-bridge": "<6.4"
             },
             "require-dev": {
-                "symfony/console": "^6.4|^7.0",
-                "symfony/http-client": "^6.4|^7.0",
-                "symfony/messenger": "^6.4|^7.0",
-                "symfony/twig-bridge": "^6.4|^7.0"
+                "symfony/console": "^6.4|^7.0|^8.0",
+                "symfony/http-client": "^6.4|^7.0|^8.0",
+                "symfony/messenger": "^6.4|^7.0|^8.0",
+                "symfony/twig-bridge": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -2621,7 +2622,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v7.3.4"
+                "source": "https://github.com/symfony/mailer/tree/v7.4.3"
             },
             "funding": [
                 {
@@ -2641,43 +2642,41 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-17T05:51:54+00:00"
+            "time": "2025-12-16T08:02:06+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v7.3.4",
+            "version": "v8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "b1b828f69cbaf887fa835a091869e55df91d0e35"
+                "reference": "7576ce3b2b4d3a2a7fe7020a07a392065d6ffd40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/b1b828f69cbaf887fa835a091869e55df91d0e35",
-                "reference": "b1b828f69cbaf887fa835a091869e55df91d0e35",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/7576ce3b2b4d3a2a7fe7020a07a392065d6ffd40",
+                "reference": "7576ce3b2b4d3a2a7fe7020a07a392065d6ffd40",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
+                "php": ">=8.4",
                 "symfony/polyfill-intl-idn": "^1.10",
                 "symfony/polyfill-mbstring": "^1.0"
             },
             "conflict": {
                 "egulias/email-validator": "~3.0.0",
                 "phpdocumentor/reflection-docblock": "<3.2.2",
-                "phpdocumentor/type-resolver": "<1.4.0",
-                "symfony/mailer": "<6.4",
-                "symfony/serializer": "<6.4.3|>7.0,<7.0.3"
+                "phpdocumentor/type-resolver": "<1.4.0"
             },
             "require-dev": {
                 "egulias/email-validator": "^2.1.10|^3.1|^4",
                 "league/html-to-markdown": "^5.0",
                 "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
-                "symfony/dependency-injection": "^6.4|^7.0",
-                "symfony/process": "^6.4|^7.0",
-                "symfony/property-access": "^6.4|^7.0",
-                "symfony/property-info": "^6.4|^7.0",
-                "symfony/serializer": "^6.4.3|^7.0.3"
+                "symfony/dependency-injection": "^7.4|^8.0",
+                "symfony/process": "^7.4|^8.0",
+                "symfony/property-access": "^7.4|^8.0",
+                "symfony/property-info": "^7.4|^8.0",
+                "symfony/serializer": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -2709,7 +2708,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v7.3.4"
+                "source": "https://github.com/symfony/mime/tree/v8.0.0"
             },
             "funding": [
                 {
@@ -2729,7 +2728,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-16T08:38:17+00:00"
+            "time": "2025-11-16T10:17:21+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -3070,16 +3069,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v3.6.0",
+            "version": "v3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4"
+                "reference": "45112560a3ba2d715666a509a0bc9521d10b6c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
-                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/45112560a3ba2d715666a509a0bc9521d10b6c43",
+                "reference": "45112560a3ba2d715666a509a0bc9521d10b6c43",
                 "shasum": ""
             },
             "require": {
@@ -3133,7 +3132,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v3.6.0"
+                "source": "https://github.com/symfony/service-contracts/tree/v3.6.1"
             },
             "funding": [
                 {
@@ -3145,11 +3144,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-25T09:37:31+00:00"
+            "time": "2025-07-15T11:30:57+00:00"
         },
         {
             "name": "tbachert/spi",
@@ -3207,16 +3210,16 @@
     "packages-dev": [
         {
             "name": "symfony/http-client",
-            "version": "v7.3.4",
+            "version": "v7.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "4b62871a01c49457cf2a8e560af7ee8a94b87a62"
+                "reference": "d01dfac1e0dc99f18da48b18101c23ce57929616"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/4b62871a01c49457cf2a8e560af7ee8a94b87a62",
-                "reference": "4b62871a01c49457cf2a8e560af7ee8a94b87a62",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/d01dfac1e0dc99f18da48b18101c23ce57929616",
+                "reference": "d01dfac1e0dc99f18da48b18101c23ce57929616",
                 "shasum": ""
             },
             "require": {
@@ -3247,12 +3250,13 @@
                 "php-http/httplug": "^1.0|^2.0",
                 "psr/http-client": "^1.0",
                 "symfony/amphp-http-client-meta": "^1.0|^2.0",
-                "symfony/dependency-injection": "^6.4|^7.0",
-                "symfony/http-kernel": "^6.4|^7.0",
-                "symfony/messenger": "^6.4|^7.0",
-                "symfony/process": "^6.4|^7.0",
-                "symfony/rate-limiter": "^6.4|^7.0",
-                "symfony/stopwatch": "^6.4|^7.0"
+                "symfony/cache": "^6.4|^7.0|^8.0",
+                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
+                "symfony/http-kernel": "^6.4|^7.0|^8.0",
+                "symfony/messenger": "^6.4|^7.0|^8.0",
+                "symfony/process": "^6.4|^7.0|^8.0",
+                "symfony/rate-limiter": "^6.4|^7.0|^8.0",
+                "symfony/stopwatch": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -3283,7 +3287,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v7.3.4"
+                "source": "https://github.com/symfony/http-client/tree/v7.4.3"
             },
             "funding": [
                 {
@@ -3303,7 +3307,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-11T10:12:26+00:00"
+            "time": "2025-12-23T14:50:43+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -3465,16 +3469,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "12.6.0",
+            "version": "12.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-coding-standard/easy-coding-standard.git",
-                "reference": "781e6124dc7e14768ae999a8f5309566bbe62004"
+                "reference": "7a6798aa424f0ecafb1542b6f5207c5a99704d3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-coding-standard/easy-coding-standard/zipball/781e6124dc7e14768ae999a8f5309566bbe62004",
-                "reference": "781e6124dc7e14768ae999a8f5309566bbe62004",
+                "url": "https://api.github.com/repos/easy-coding-standard/easy-coding-standard/zipball/7a6798aa424f0ecafb1542b6f5207c5a99704d3d",
+                "reference": "7a6798aa424f0ecafb1542b6f5207c5a99704d3d",
                 "shasum": ""
             },
             "require": {
@@ -3510,7 +3514,7 @@
             ],
             "support": {
                 "issues": "https://github.com/easy-coding-standard/easy-coding-standard/issues",
-                "source": "https://github.com/easy-coding-standard/easy-coding-standard/tree/12.6.0"
+                "source": "https://github.com/easy-coding-standard/easy-coding-standard/tree/12.6.2"
             },
             "funding": [
                 {
@@ -3522,7 +3526,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-10T14:21:58+00:00"
+            "time": "2025-10-29T08:51:50+00:00"
         }
     ],
     "aliases": [],
@@ -3532,5 +3536,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
