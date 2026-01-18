@@ -174,6 +174,9 @@ final class MsftGraphTransport extends AbstractTransport
 		if ($headers->has('bcc')) {
 			$message->setBccRecipients($this->getRecipientsForHeader($headers->all('bcc')));
 		}
+		if ($headers->has('reply-to')) {
+			$message->setReplyTo($this->getRecipientsForHeader($headers->all('reply-to')));
+		}
 		return $message;
 	}
 
