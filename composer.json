@@ -3,13 +3,13 @@
     "description": "A mailer for Symfony to send mails using Microsoft Graph",
     "type": "library",
     "require": {
-        "symfony/mailer": "^6.4|^7.0",
+        "symfony/mailer": "^6.4|^7.0|^8.0",
         "microsoft/kiota-authentication-phpleague": "^1.0",
         "microsoft/microsoft-graph": "^2.2"
     },
     "require-dev": {
-        "symplify/easy-coding-standard": "^12.0.6",
-        "symfony/http-client": "^6.4|^7.0"
+        "symplify/easy-coding-standard": "^13.0.4",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
     },
     "license": "MIT",
     "autoload": {
