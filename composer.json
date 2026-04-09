@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "symfony/mailer": "^6.4|^7.0",
-        "microsoft/kiota-authentication-phpleague": "^1.0",
+        "microsoft/kiota-authentication-phpleague": "^1.0|^2.0",
         "microsoft/microsoft-graph": "^2.2"
     },
     "require-dev": {
